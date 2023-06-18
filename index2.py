@@ -9,20 +9,19 @@ from health_data import health_database, train_data
 from azure.ai.translation.text import TextTranslationClient, TranslatorCredential
 from azure.ai.translation.text.models import InputTextItem
 
-
+# Retrieve API keys from Streamlit secrets
 api_key = st.secrets["api_key"]
 azure_key = st.secrets["azure_key"]
 endpoints = st.secrets["endpoint"]
 region = st.secrets["region"]
 
+# Initialize Azure Translator API client
 credential = TranslatorCredential(azure_key, region)
 text_translator = TextTranslationClient(endpoint=endpoints, credential=credential)
-# Initialize Azure Translator API client
+
 
 st.set_page_config(page_title="InclusiBot")
 # Paste your API key here. Remember to not share publicly
-
-# Create and retrieve a Cohere API key from os.cohere.ai
 co = cohere.Client(api_key)
 
 
@@ -59,7 +58,7 @@ cohereHealthExtractor = cohereExtractor([e[1] for e in train_data],
 text = cohereHealthExtractor.make_prompt(
     'When can a person have sex after gender-affirming surgery')
 target_language_code = "en" 
-# Sidebar contents
+# Sidebar contents.
 with st.sidebar:
     colored_header(label='🌈 Welcome to InclusiBot 🤖', description= "Here to Help you", color_name='blue-30')
     st.header('Sexual Education Chatbot for LGBTQ+ Community')
@@ -70,7 +69,7 @@ with st.sidebar:
     InclusiBot is an AI-powered chatbot designed to provide sexual education information and support for the LGBTQ+ community.
     
     🌈 We believe in inclusivity, respect, and empowerment for all individuals.
-    
+
     ### How InclusiBot Works
     - InclusiBot utilizes advanced language models to understand your questions and provide accurate responses.
     - It covers various topics related to sexual health, identity, relationships, and more.
@@ -79,21 +78,20 @@ with st.sidebar:
     ''')
     add_vertical_space(5)
 
-# Generate empty lists for generated and past.
-# generated stores AI generated responses
+# Generate empty lists for generated and past. These will be used to store the chat history
 if 'generated' not in st.session_state:
     st.session_state['generated'] = ["I'm InclusiBot, How may I help you?"]
 # past stores User's questions
 if 'past' not in st.session_state:
     st.session_state['past'] = ['Hi!']
 
-# Layout of input/response containers
+# Layout of input/response containers. These will be used to display the chat history
 response_container = st.container()
 colored_header(label='', description='', color_name='blue-30')
 
 input_container = st.container()
 # User input
-# Function for taking user provided prompt as input
+# Function for taking user provided prompt as input, and generating a response
 def translate_text(text, target_language):
     
     target_languages = [target_language]
@@ -149,6 +147,8 @@ def generate_response(prompt, target_language):
 
 with response_container:
     if user_input:
+        if target_language_code == "":
+            target_language_code = "en"
        
         response = generate_response(
             user_input,  target_language_code
@@ -162,7 +162,7 @@ with response_container:
             message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
             message(st.session_state["generated"][i], key=str(i))
 
-# Conditional display of AI generated responses as a function of user provided prompts
+
 # with response_container:
 #     if user_input:
 #         response = generate_response(
