@@ -1,6 +1,6 @@
-# InclusiBot
+# InclusiBot 🌈🤖
 
-InclusiBot is an AI-powered chatbot designed to provide sexual education information and support for the LGBTQ+ community.
+InclusiBot is an AI-powered chatbot designed to provide sexual education information and support for the LGBTQ+ community. 
 
 ## Table of Contents
 - [About InclusiBot](#about-inclusibot)
@@ -10,28 +10,27 @@ InclusiBot is an AI-powered chatbot designed to provide sexual education informa
 - [Installation](#installation)
 - [License](#license)
 
-## About InclusiBot
+## About InclusiBot ℹ️
 InclusiBot is an AI-powered chatbot designed to provide sexual education information and support for the LGBTQ+ community. It utilizes advanced language models to understand users' questions and provide accurate responses on various topics related to sexual health, identity, relationships, and more.
 
-Please note that InclusiBot is not a substitute for professional advice. For specific concerns, it is always recommended to consult qualified healthcare professionals.
+Please note that InclusiBot is not a substitute for professional advice. For specific concerns, it is always recommended to consult qualified healthcare professionals. 🏥
 
-## How InclusiBot Works
-InclusiBot uses a combination of machine learning models and natural language processing techniques to understand user inputs and generate relevant responses. It incorporates a keyword extraction approach to identify key topics and match them with pre-defined answers from a health database. The bot also supports translation functionality to provide responses in multiple languages.
+## How InclusiBot Works ⚙️
+InclusiBot uses a combination of machine learning models and natural language processing techniques to understand user inputs and generate relevant responses. It incorporates a keyword extraction approach to identify key topics and match them with pre-defined answers from a health database. The bot also supports translation functionality to provide responses in multiple languages. 🗣️💬
 
-## Hosted Link - 
-Streamlit - https://prydebot.streamlit.app/
+## Hosted Link 🔗
+Streamlit - [https://prydebot.streamlit.app/](https://prydebot.streamlit.app/)
 
-## Usage
+## Usage 🚀
 To interact with InclusiBot, follow these steps:
-1. Provide your input/question in the text input box.
-2. Specify the target language code for the response.
-3. Click "Enter" or press the "Submit" button.
+1. Provide your input/question in the text input box. 💬
+2. Specify the target language code for the response. 🌍
+3. Click "Enter" or press the "Submit" button. 🚀
 
 The chatbot will process your input, generate a response, and display it in the chat history.
 
-### Questions to Ask the Bot
-Please note that the prototype database may have limited information that we have curated from verified sources. For accurate and reliable information, it is recommended to consult qualified healthcare professionals or trusted educational resources.
-Here are some example questions you can ask InclusiBot:
+### Questions to Ask the Bot ❓🤔
+Please note that the prototype database may have limited information that we have curated from verified sources. For accurate and reliable information, it is recommended to consult qualified healthcare professionals or trusted educational resources. Here are some example questions you can ask InclusiBot:
 
 1. How can one protect against STIs after gender-affirming surgery?
 2. What hygiene tips are important after vaginoplasty?
@@ -57,8 +56,7 @@ Here are some example questions you can ask InclusiBot:
 22. Can you suggest some resources for LGBTQ+ youth?
 23. Give some resources related to LGBT health.
 
-
-## Installation
+## Installation 💻
 To run InclusiBot locally, please follow these steps:
 
 1. Clone the repository:
@@ -78,5 +76,5 @@ To run InclusiBot locally, please follow these steps:
   ```
 5. Access the application in your browser at http://localhost:8501.
 
-## License
+## License 📝
 This project is licensed under the MIT License.
