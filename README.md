@@ -1,6 +1,6 @@
 # InclusiBot 🌈🤖
 
-InclusiBot is an AI-powered chatbot designed to provide sexual education information and support for the LGBTQ+ community. 
+InclusiBot is an AI-powered chatbot designed to provide sexual health education information and support for the LGBTQ+ community. 
 
 ## Table of Contents
 - [About InclusiBot](#about-inclusibot)
@@ -11,7 +11,7 @@ InclusiBot is an AI-powered chatbot designed to provide sexual education informa
 - [License](#license)
 
 ## About InclusiBot ℹ️
-InclusiBot is an AI-powered chatbot designed to provide sexual education information and support for the LGBTQ+ community. It utilizes advanced language models to understand users' questions and provide accurate responses on various topics related to sexual health, identity, relationships, and more.
+InclusiBot is an AI-powered chatbot designed to provide sexual health education information and support for the LGBTQ+ community. It utilizes advanced language models to understand users' questions and provide accurate responses on various topics related to sexual health.
 
 Please note that InclusiBot is not a substitute for professional advice. For specific concerns, it is always recommended to consult qualified healthcare professionals. 🏥
 
